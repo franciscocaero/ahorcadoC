@@ -22,9 +22,12 @@ public class Main {
         while (intentos <= 7 && !igual) {
             char p = miVariable.next().charAt((0));
             if (palabraA.contains(Character.toString(p))) {
-                int posicion = palabraA.indexOf(p);
-                copia = copia.substring(0,posicion)+p+copia.substring(posicion+1);
-                System.out.println("Adivina la palabra: "+copia);
+                for (int i = 0; i < palabraA.length(); i++) {
+                    if (palabraA.charAt(i) == p) {
+                        copia = copia.substring(0, i) + p + copia.substring(i + 1);
+                    }
+                }
+                System.out.println("Adivina la palabra: " + copia);
                 System.out.println("Ingresa otra letra: ");
             } else {
                 intentos ++;
