@@ -36,7 +36,7 @@ public class Main {
             }
             if (copia.equals(palabraA)) {
                 System.out.println("Acertaste.La palabra era " + copia);
-                igual =true;
+                igual = true;
             }
             if (intentos == 1) {
                 System.out.println("______   ");
@@ -92,7 +92,7 @@ public class Main {
                 System.out.println("|   /    ");
                 System.out.println("Adivina la palabra: "+copia);
                 System.out.println("Ingresa otra letra: ");
-            } else {
+            } else if (intentos == 7){
                 System.out.println("Perdiste!!!");
                 System.out.println("______   ");
                 System.out.println("|    |   ");
@@ -101,6 +101,7 @@ public class Main {
                 System.out.println("|    |   ");
                 System.out.println("|   / \\ ");
                 System.out.println("La palabra era: " + palabraA);
+                igual = true;
             }
         }
     }
