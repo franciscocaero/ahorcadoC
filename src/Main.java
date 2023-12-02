@@ -1,5 +1,3 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 import java.util.Random;
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -15,7 +13,7 @@ public class Main {
         String palabraA = listaPalabras.get(indiceP);
         String copia = new String(palabraA);
         copia = copia.replaceAll(".", "_");
-        System.out.println("Tienes 7 intentos.\n Adivina la palabra. Escribe una letra:  " + copia);
+        System.out.println("Tienes 7 intentos.\n Adivina la palabra: "+ copia+" Escribe una letra:  " );
         Scanner miVariable = new Scanner(System.in);
         int intentos = 0;
         boolean igual = false;
